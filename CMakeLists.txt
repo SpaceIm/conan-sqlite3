@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 3.1.2)
 project(sqlite3 C)
 
-if(EXISTS "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
-  include("${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
-else()
-  include(conanbuildinfo.cmake)
-endif()
+include(conanbuildinfo.cmake)
 conan_basic_setup()
 
 # Add some options from https://sqlite.org/compile.html
